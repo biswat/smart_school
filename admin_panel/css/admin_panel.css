@@ -1,0 +1,28 @@
+.bg-color{
+    background-color: #07689f;
+}
+
+.add-button{
+    margin: 2% 27%;
+    font-size: 3em;
+}
+
+.table-info{
+    margin-top: 5%;
+}
+
+.navbar-nav li a{
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.navbar-nav li a i{
+    color: white;
+}
+
+.sidebar ul li a, i{
+    text-decoration: none;
+    color: #181111da;
+    padding: 15px 5px;
+    font-size: 1.1em;
+}
