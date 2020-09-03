@@ -103,7 +103,7 @@
 
         
         <div class="modal fade" id="modal-form">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Member adding form</h5>
@@ -113,12 +113,13 @@
                     </div>
                     <div class="modal-body">
                         <form action="">
-                            <input type="text" name="" id="" placeholder="First Name" required>
-                            <input type="text" name="" id="" placeholder="Last Name" required>
+                            <input type="text" class="form-control" name="" id="" placeholder="First Name" required>
                             <br>
+                            <input type="text" class="form-control" name="" id="" placeholder="Last Name" required>
                             <br>
-                            ID Number: <input type="text" placeholder="ID" required>
+                            <input type="email" class="form-control" name="" id="" placeholder="Enter Email address">
                             <br>
+                            ID Number: <input class="form-control" type="text" placeholder="ID" required>
                             <br>
                             <label for="cars">Choose a profession:</label>
                             <select name="cars" id="cars">
@@ -128,13 +129,16 @@
                             <br>
                             <br>
                             <form class="student-form" action="">
-                                Class Admitted: <input type="number" name="" id="" max="12" min="1" required>
+                                Class Admitted: <input class="form-control" type="number" name="" id="" max="12" min="1">
                             </form>
                             <form class="teacher-form" action="">
-                                Subjects taught: <input type="text" required>
+                                Subjects taught: <input class="form-control" type="text">
                                 <h6 style="color: red;">*Type the subjects seperated by ','.</h6>
                             </form>
                         </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </div>
                 </div>
             </div>
