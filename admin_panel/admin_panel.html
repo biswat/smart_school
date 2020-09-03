@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="css/admin_panel.css">
+<title>Admin Dashboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">XYZ Public School</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> Help</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+              </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-sm-2 bg-light sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href=""><i class="fas fa-paste"></i>Reports</a></li>
+                    <li class="nav-item"><a href=""><i class="fas fa-chart-bar"></i>Analytics</a></li>
+                    <li class="nav-item"><a href=""><i class="fas fa-envelope"></i>Inbox</a></li>
+                    <li class="nav-item"><a href=""><i class="fas fa-bell"></i>Notifications</a></li>
+                </ul>
+            </nav>
+
+            <div class="col-md-9 col-sm-10">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <button class="add-button" data-toggle="modal" data-target="#modal-form">
+                            <i class="fas fa-plus"></i> Add Individiual
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-info .table-responsive-sm">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sl. No.</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Profession</th>
+                                <th scope="col">Data Entry Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>123456</td>
+                                <td>Student</td>
+                                <td>06 September, 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>123456</td>
+                                <td>Student</td>
+                                <td>06 September, 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>123456</td>
+                                <td>Student</td>
+                                <td>06 September, 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>123456</td>
+                                <td>Student</td>
+                                <td>06 September, 2018</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="modal fade" id="modal-form">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Member adding form</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="First Name" required>
+                            <input type="text" name="" id="" placeholder="Last Name" required>
+                            <br>
+                            <br>
+                            ID Number: <input type="text" placeholder="ID" required>
+                            <br>
+                            <br>
+                            <label for="cars">Choose a profession:</label>
+                            <select name="cars" id="cars">
+                              <option value="volvo">Student</option>
+                              <option value="saab">Teacher</option>
+                            </select>
+                            <br>
+                            <br>
+                            <form class="student-form" action="">
+                                Class Admitted: <input type="number" name="" id="" max="12" min="1" required>
+                            </form>
+                            <form class="teacher-form" action="">
+                                Subjects taught: <input type="text" required>
+                                <h6 style="color: red;">*Type the subjects seperated by ','.</h6>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
